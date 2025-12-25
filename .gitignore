@@ -76,5 +76,10 @@ agenthub/agents/youtube/db
 # Build caches
 .cache/
 
+# Additional project ignores
+.env
+.pytest_cache/
+.emergent/
+
 # Mobile development
 android-sdk/ 
