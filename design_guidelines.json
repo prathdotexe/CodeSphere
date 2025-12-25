@@ -1,0 +1,202 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "CodeSphere",
+      "theme_name": "Orbital Command",
+      "archetype": "Electric & Neon (Future, Speed, Disruption)",
+      "core_concept": "A high-performance, immersive cockpit for code. Dark, focused, and electric.",
+      "emotional_tone": "Professional, Futuristic, Flow-State, Collaborative"
+    },
+    "typography": {
+      "fonts": {
+        "heading": {
+          "family": "Space Grotesk",
+          "fallback": "sans-serif",
+          "weights": ["700", "600"],
+          "usage": "Landing page headlines, major section titles, modal headers"
+        },
+        "body": {
+          "family": "Manrope",
+          "fallback": "sans-serif",
+          "weights": ["400", "500"],
+          "usage": "UI text, descriptions, chat messages, settings"
+        },
+        "code": {
+          "family": "JetBrains Mono",
+          "fallback": "monospace",
+          "weights": ["400", "500"],
+          "usage": "Code editor, snippets, terminal, data values, latency metrics"
+        }
+      },
+      "rules": {
+        "headings": "tracking-tight leading-none",
+        "overline": "uppercase tracking-[0.2em] text-xs font-bold text-cyan-400",
+        "body": "leading-relaxed text-slate-300"
+      }
+    },
+    "colors": {
+      "palette": {
+        "background": {
+          "base": "#0B0C10",
+          "surface": "#1F2833",
+          "overlay": "#1F2833"
+        },
+        "foreground": {
+          "primary": "#E0E0E0",
+          "secondary": "#C5C6C7",
+          "muted": "#6B7280"
+        },
+        "accent": {
+          "primary": "#66FCF1",
+          "secondary": "#45A29E",
+          "highlight": "#BD00FF"
+        },
+        "status": {
+          "success": "#10B981",
+          "warning": "#F59E0B",
+          "error": "#EF4444",
+          "info": "#3B82F6"
+        }
+      },
+      "css_variables": {
+        "root": {
+          "--background": "222 15% 5%",
+          "--foreground": "210 20% 98%",
+          "--card": "222 15% 7%",
+          "--card-foreground": "210 20% 98%",
+          "--popover": "222 15% 7%",
+          "--popover-foreground": "210 20% 98%",
+          "--primary": "176 95% 69%",
+          "--primary-foreground": "222 15% 5%",
+          "--secondary": "217 19% 27%",
+          "--secondary-foreground": "210 20% 98%",
+          "--muted": "217 19% 20%",
+          "--muted-foreground": "215 20% 65%",
+          "--accent": "176 95% 69%",
+          "--accent-foreground": "222 15% 5%",
+          "--destructive": "0 62.8% 30.6%",
+          "--destructive-foreground": "210 20% 98%",
+          "--border": "217 19% 20%",
+          "--input": "217 19% 20%",
+          "--ring": "176 95% 69%",
+          "--radius": "0.25rem"
+        }
+      }
+    },
+    "visual_enhancers": {
+      "glassmorphism": {
+        "style": "backdrop-blur-xl bg-black/40 border border-white/10 shadow-2xl",
+        "usage": "Floating panels, video chat overlay, sticky headers"
+      },
+      "glows": {
+        "primary": "shadow-[0_0_20px_rgba(102,252,241,0.3)]",
+        "text": "drop-shadow-[0_0_8px_rgba(102,252,241,0.5)]"
+      },
+      "borders": {
+        "subtle": "border border-white/5",
+        "active": "border border-cyan-400/50"
+      },
+      "textures": {
+        "grid": "bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]",
+        "scanlines": "bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))]"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-cyan-400 text-black hover:bg-cyan-300 font-bold uppercase tracking-wider rounded-sm shadow-[0_0_15px_rgba(102,252,241,0.4)] transition-all hover:scale-105",
+        "secondary": "bg-transparent border border-cyan-400/30 text-cyan-400 hover:bg-cyan-400/10 hover:border-cyan-400 rounded-sm",
+        "ghost": "text-slate-400 hover:text-white hover:bg-white/5"
+      },
+      "cards": {
+        "base": "bg-[#1F2833]/50 border border-white/5 rounded-lg backdrop-blur-sm",
+        "hover": "hover:border-cyan-400/30 transition-colors duration-300"
+      },
+      "inputs": {
+        "style": "bg-black/20 border-white/10 focus:border-cyan-400/50 focus:ring-1 focus:ring-cyan-400/50 rounded-sm text-white placeholder:text-slate-600 font-mono"
+      }
+    }
+  },
+  "layouts": {
+    "landing_page": {
+      "structure": "Tetris Grid (Mode A)",
+      "sections": [
+        {
+          "name": "Hero",
+          "grid": "col-span-full lg:col-span-8 row-span-2",
+          "content": "Headline, Subheadline, 'Create Session' CTA, 'Join Session' Input",
+          "style": "Relative container with 'Abstract Network' background image, heavy gradient overlay (bottom-to-top)"
+        },
+        {
+          "name": "Feature: Real-time",
+          "grid": "col-span-full md:col-span-4 row-span-1",
+          "content": "Icon + 'Zero Latency' text",
+          "style": "Glassmorphism card"
+        },
+        {
+          "name": "Feature: Video",
+          "grid": "col-span-full md:col-span-4 row-span-1",
+          "content": "Icon + 'HD Video Chat' text",
+          "style": "Glassmorphism card"
+        },
+        {
+          "name": "Social Proof",
+          "grid": "col-span-full row-span-1",
+          "content": "Marquee of tech logos or user stats",
+          "style": "Low contrast, scrolling text"
+        }
+      ]
+    },
+    "session_page": {
+      "structure": "Control Room Grid (Mode B)",
+      "layout_css": "grid grid-cols-12 h-screen overflow-hidden bg-[#0B0C10]",
+      "areas": {
+        "sidebar": "col-span-2 border-r border-white/5 bg-[#0B0C10] flex flex-col",
+        "editor": "col-span-8 flex flex-col relative",
+        "video_panel": "col-span-2 border-l border-white/5 bg-[#0B0C10] flex flex-col gap-4 p-4"
+      }
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_background": {
+        "url": "https://images.unsplash.com/photo-1737505599162-d9932323a889?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRpZ2l0YWwlMjBuZXR3b3JrJTIwY29ubmVjdGlvbiUyMGRhcmt8ZW58MHx8fHwxNzY2NjYxNTc5fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Abstract digital network connection",
+        "usage": "Hero section background with opacity-30 and black overlay"
+      },
+      "collaboration_demo": {
+        "url": "https://images.unsplash.com/photo-1677078610152-8a627d8ced8d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxkaXZlcnNlJTIwdGVjaCUyMHRlYW0lMjBjb2xsYWJvcmF0aW9uJTIwbW9kZXJuJTIwb2ZmaWNlfGVufDB8fHx8MTc2NjY2MTU4MHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Team collaborating",
+        "usage": "Feature section visual"
+      },
+      "coding_vibe": {
+        "url": "https://images.unsplash.com/photo-1649451844813-3130d6f42f8a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxwcm9ncmFtbWVyJTIwY29kaW5nJTIwbmlnaHQlMjBuZW9ufGVufDB8fHx8MTc2NjY2MTU3N3ww&ixlib=rb-4.1.0&q=85",
+        "alt": "Laptop coding setup",
+        "usage": "Secondary background or blog thumbnail"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "preferred": ["Code2", "Video", "Mic", "MicOff", "VideoOff", "Share2", "Users", "Settings", "Terminal"]
+    }
+  },
+  "instructions_to_main_agent": {
+    "setup": [
+      "Update /app/frontend/src/index.css with the provided CSS variables for the 'Orbital Command' theme.",
+      "Install 'lucide-react' if not present.",
+      "Ensure 'Space Grotesk' and 'JetBrains Mono' are imported (via Google Fonts in index.html or CSS)."
+    ],
+    "implementation_rules": [
+      "Use the 'Tetris Grid' for the Landing Page. Do not stack everything vertically.",
+      "The Session Page must be full-height (h-screen) with no scroll on the body.",
+      "Video chat bubbles should float or stack neatly in the sidebar.",
+      "Use the 'glassmorphism' style for any overlay panels (settings, invite modal).",
+      "Buttons must have the 'glows.primary' shadow on hover.",
+      "All interactive elements must have data-testid attributes."
+    ],
+    "universal_guidelines": [
+      "Do not use gradients for backgrounds, use the solid dark colors defined.",
+      "Use the 'textures.grid' class on the body background to give a technical feel.",
+      "Ensure text contrast is high (use slate-300 or white, never dark grey on dark bg)."
+    ]
+  }
+}
